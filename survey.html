@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </div>
+
+    <header>
+        <h1 class="band-name">Accessible frog</h1>
+        <h2 class="band-info">we make awesome music</h2>
+    </header>
+
+    <main>
+      <h1 class= "heading">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="Photo of the crowd at a concert">
+          <div class="container">
+            <form class = "survey">
+                
+              <h2 class="heading-2">Who is your favorite band member:</h2>
+              <fieldset>
+                  <input type="radio" name="res" value="John" id="john"><label for="john">John</label>
+                  <input type="radio" name="res" value="Hazzard" id="hazzard"><label for="hazzard">Hazzard</label>
+                  <input type="radio" name="res" value="Bob" id="bob"><label for="bob">Bob</label>
+                  <input type="radio" name="res" value="Sally" id="sally"><label for="sally">Sally</label>
+              </fieldset>
+              <h2 class="heading-2">What is your favorite album?</h2>
+                <label for="albums">Select an Album:</label>
+              <select id="albums" name="select">
+                  <option value="1">A Day Of Old</option>
+                  <option value="2">Diamond Fireworks</option>
+                  <option value="3">Enjoy Your Desire</option>
+                  <option value="4">Finding My Shadow</option>
+                  <option value="5">Heroic Forever</option>
+                  <option value="6">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="8">Party For An Angel</option>
+                  <option value="9">Song For Yesterday</option>
+                  <option value="10">Street Of The Rider</option>
+                  <option value="11">This Is For You</option>
+              </select>
+
+              <label class="heading-2" for="song">What is your favorite song?</label>
+              <textarea id="song" placeholder="Place your favorite song here"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h1 class= "heading">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="Photo of the band performing live at a concert.">
+            <div class="container">
+              <form class="newsletter">
+                  <h2>Join the Newsletter!</h2>
+                  <label for="name">Name:</label> <input type ="text" id="name" name="textfield"><br>
+                  <label for="email">Email:</label> <input type ="email" id="email" name="textfield"><br>
+                  <label for="re-email">Retype Email:</label> <input type ="email" id="re-email" name="textfield">
+                  
+                  <div class="button-holder">
+                    <button type="submit">Sign Up</button>
+                  </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul id="footer-navigation">
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Image of Twitter logo"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Image of Youtube logo"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Image of spotify logo"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2016, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
